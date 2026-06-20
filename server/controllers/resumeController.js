@@ -1,15 +1,24 @@
-const path    = require('path');
-const multer  = require('multer');
-const Resume  = require('../models/Resume');
+const path = require('path');
+const fs = require('fs');
+const multer = require('multer');
+const Resume = require('../models/Resume');
 const { extractText, detectSections } = require('../services/resumeParser');
+
+// Create uploads directory automatically if it doesn't exist
+const uploadDir = path.join(__dirname, '../uploads');
+
+if (!fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir, { recursive: true });
+}
 
 // ─── MULTER CONFIGURATION ────────────────────────────────────────────────────
 
 // Store files on disk in server/uploads/ with a timestamp-prefixed name so
 // concurrent uploads from different users never collide.
 const storage = multer.diskStorage({
-  destination: (req, file, cb) => cb(null, path.join(__dirname, '../uploads')),
-  filename:    (req, file, cb) => {
+  destination: (req, file, cb) => cb(null, uploadDir),
+
+  filename: (req, file, cb) => {
     const safeName = file.originalname.replace(/\s+/g, '_');
     cb(null, `${Date.now()}_${req.user._id}_${safeName}`);
   },
