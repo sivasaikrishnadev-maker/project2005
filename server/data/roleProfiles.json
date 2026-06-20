@@ -1,0 +1,193 @@
+[
+  {
+    "id": "fullstack_developer",
+    "title": "Full Stack Developer",
+    "description": "Builds both client-side and server-side of web applications.",
+    "coreSkills": [
+      "javascript", "react", "node.js", "express", "mongodb",
+      "html", "css", "rest api", "git"
+    ],
+    "bonusSkills": [
+      "typescript", "next.js", "postgresql", "docker", "redux",
+      "tailwind", "graphql", "aws", "jest"
+    ],
+    "categoryWeights": {
+      "frontend": 0.35,
+      "backend": 0.35,
+      "databases": 0.15,
+      "tools": 0.10,
+      "cloud": 0.05
+    }
+  },
+  {
+    "id": "frontend_developer",
+    "title": "Frontend Developer",
+    "description": "Specialises in building responsive, interactive user interfaces.",
+    "coreSkills": [
+      "javascript", "react", "html", "css", "git"
+    ],
+    "bonusSkills": [
+      "typescript", "next.js", "vue", "tailwind", "redux",
+      "webpack", "vite", "jest", "figma", "sass"
+    ],
+    "categoryWeights": {
+      "frontend": 0.60,
+      "languages": 0.20,
+      "tools": 0.15,
+      "backend": 0.05
+    }
+  },
+  {
+    "id": "backend_developer",
+    "title": "Backend Developer",
+    "description": "Designs and builds server-side logic, APIs, and databases.",
+    "coreSkills": [
+      "node.js", "express", "rest api", "mongodb", "postgresql", "git"
+    ],
+    "bonusSkills": [
+      "python", "django", "flask", "redis", "docker", "graphql",
+      "kafka", "rabbitmq", "nginx", "jest", "aws"
+    ],
+    "categoryWeights": {
+      "backend": 0.45,
+      "databases": 0.25,
+      "cloud": 0.15,
+      "tools": 0.10,
+      "languages": 0.05
+    }
+  },
+  {
+    "id": "data_scientist",
+    "title": "Data Scientist",
+    "description": "Extracts insights from data using statistical and ML techniques.",
+    "coreSkills": [
+      "python", "pandas", "numpy", "scikit-learn", "sql", "matplotlib"
+    ],
+    "bonusSkills": [
+      "tensorflow", "pytorch", "keras", "seaborn", "plotly",
+      "r", "spark", "airflow", "mlflow", "jupyter",
+      "deep learning", "nlp", "time series", "xgboost"
+    ],
+    "categoryWeights": {
+      "aiml": 0.50,
+      "languages": 0.25,
+      "databases": 0.15,
+      "tools": 0.10
+    }
+  },
+  {
+    "id": "ml_engineer",
+    "title": "Machine Learning Engineer",
+    "description": "Builds, trains, and deploys machine learning models at scale.",
+    "coreSkills": [
+      "python", "tensorflow", "pytorch", "scikit-learn", "pandas",
+      "numpy", "deep learning", "git"
+    ],
+    "bonusSkills": [
+      "keras", "hugging face", "langchain", "mlflow", "airflow",
+      "docker", "aws", "kubernetes", "opencv", "nlp",
+      "transformers", "xgboost", "spark", "cuda"
+    ],
+    "categoryWeights": {
+      "aiml": 0.55,
+      "languages": 0.20,
+      "cloud": 0.15,
+      "tools": 0.10
+    }
+  },
+  {
+    "id": "devops_engineer",
+    "title": "DevOps Engineer",
+    "description": "Manages CI/CD pipelines, infrastructure, and cloud deployments.",
+    "coreSkills": [
+      "docker", "kubernetes", "aws", "git", "linux", "bash", "ci/cd"
+    ],
+    "bonusSkills": [
+      "terraform", "ansible", "helm", "jenkins", "github actions",
+      "prometheus", "grafana", "nginx", "python", "gitlab ci",
+      "argocd", "gcp", "azure", "datadog", "sentry"
+    ],
+    "categoryWeights": {
+      "cloud": 0.50,
+      "tools": 0.25,
+      "backend": 0.15,
+      "languages": 0.10
+    }
+  },
+  {
+    "id": "cloud_engineer",
+    "title": "Cloud Engineer",
+    "description": "Designs and manages scalable cloud infrastructure solutions.",
+    "coreSkills": [
+      "aws", "docker", "terraform", "linux", "git", "ci/cd"
+    ],
+    "bonusSkills": [
+      "kubernetes", "ansible", "gcp", "azure", "python",
+      "helm", "cloudfront", "lambda", "ec2", "s3",
+      "github actions", "prometheus", "grafana"
+    ],
+    "categoryWeights": {
+      "cloud": 0.60,
+      "tools": 0.20,
+      "languages": 0.10,
+      "backend": 0.10
+    }
+  },
+  {
+    "id": "mobile_developer",
+    "title": "Mobile App Developer",
+    "description": "Builds native and cross-platform mobile applications.",
+    "coreSkills": [
+      "react native", "javascript", "git"
+    ],
+    "bonusSkills": [
+      "typescript", "kotlin", "swift", "dart", "flutter",
+      "firebase", "redux", "expo", "android", "ios",
+      "rest api", "graphql"
+    ],
+    "categoryWeights": {
+      "frontend": 0.40,
+      "languages": 0.30,
+      "backend": 0.15,
+      "tools": 0.15
+    }
+  },
+  {
+    "id": "ai_engineer",
+    "title": "AI / Generative AI Engineer",
+    "description": "Builds LLM-powered applications, RAG pipelines, and AI products.",
+    "coreSkills": [
+      "python", "openai", "langchain", "llm", "hugging face", "git"
+    ],
+    "bonusSkills": [
+      "transformers", "bert", "gpt", "pytorch", "tensorflow",
+      "fastapi", "docker", "aws", "nlp", "vector databases",
+      "stable diffusion", "generative ai", "rag"
+    ],
+    "categoryWeights": {
+      "aiml": 0.60,
+      "backend": 0.20,
+      "languages": 0.10,
+      "cloud": 0.10
+    }
+  },
+  {
+    "id": "data_analyst",
+    "title": "Data Analyst",
+    "description": "Analyses data to produce actionable business insights and reports.",
+    "coreSkills": [
+      "sql", "python", "excel", "pandas", "matplotlib"
+    ],
+    "bonusSkills": [
+      "r", "tableau", "power bi", "seaborn", "plotly",
+      "numpy", "postgresql", "mysql", "data analysis",
+      "feature engineering", "clustering"
+    ],
+    "categoryWeights": {
+      "aiml": 0.35,
+      "databases": 0.30,
+      "languages": 0.25,
+      "tools": 0.10
+    }
+  }
+]

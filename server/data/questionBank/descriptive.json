@@ -1,0 +1,86 @@
+[
+  {
+    "text": "Explain how the Node.js event loop works. Why is Node.js suitable for I/O-bound tasks but not CPU-bound tasks?",
+    "type": "descriptive", "skill": "node.js", "role": "backend_developer", "difficulty": "medium",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "Node.js runs on a single thread but uses libuv's event loop to handle asynchronous I/O without blocking. When an async operation (file read, network request) is initiated, it is offloaded to the OS/thread pool. When complete, the callback is pushed to the event queue and executed by the event loop. This makes Node ideal for I/O-bound tasks (many concurrent connections) because threads aren't blocked. However, CPU-heavy computation blocks the single thread, preventing other requests from being served — use worker threads or offload to microservices for CPU-bound work.",
+    "rubric": [
+      { "criterion": "Mentions single-threaded model", "weight": 2 },
+      { "criterion": "Explains async I/O via libuv/OS", "weight": 2 },
+      { "criterion": "Explains event queue and callbacks", "weight": 2 },
+      { "criterion": "Explains why CPU tasks block the loop", "weight": 2 },
+      { "criterion": "Suggests worker threads or offloading for CPU tasks", "weight": 1 }
+    ],
+    "tags": ["node.js", "backend", "event loop"]
+  },
+  {
+    "text": "Describe the React component lifecycle and how hooks replace lifecycle methods. Include useEffect in your answer.",
+    "type": "descriptive", "skill": "react", "role": "frontend_developer", "difficulty": "medium",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "Class components have lifecycle methods: componentDidMount (after first render), componentDidUpdate (after re-render), componentWillUnmount (cleanup). Hooks replace these in functional components. useEffect with an empty dependency array [] mimics componentDidMount. With a dependency array it runs when those values change (componentDidUpdate). Returning a cleanup function from useEffect mimics componentWillUnmount. useState replaces this.state.",
+    "rubric": [
+      { "criterion": "Names mount/update/unmount lifecycle phases", "weight": 2 },
+      { "criterion": "Explains useEffect with empty array = componentDidMount", "weight": 2 },
+      { "criterion": "Explains dependency array for updates", "weight": 2 },
+      { "criterion": "Explains cleanup function = componentWillUnmount", "weight": 2 },
+      { "criterion": "Mentions useState replacing this.state", "weight": 1 }
+    ],
+    "tags": ["react", "hooks", "frontend"]
+  },
+  {
+    "text": "Explain what indexes are in MongoDB and when you should and should not use them.",
+    "type": "descriptive", "skill": "mongodb", "role": "backend_developer", "difficulty": "medium",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "Indexes in MongoDB are data structures (B-tree by default) that store a small portion of the collection's data in an easy-to-traverse form. They speed up read queries dramatically by avoiding full collection scans. Use indexes on fields frequently used in queries, sort operations, or join-like lookups. Avoid over-indexing: each index consumes memory and slows write operations (insert/update/delete must update all indexes). Compound indexes cover multiple fields. The explain() method helps identify missing indexes.",
+    "rubric": [
+      { "criterion": "Explains B-tree or avoids full scan", "weight": 2 },
+      { "criterion": "Knows when to use indexes (frequent query fields)", "weight": 2 },
+      { "criterion": "Mentions write performance penalty", "weight": 2 },
+      { "criterion": "Mentions compound indexes", "weight": 1 },
+      { "criterion": "Mentions explain() or query planning", "weight": 1 }
+    ],
+    "tags": ["mongodb", "databases", "performance"]
+  },
+  {
+    "text": "What is the difference between deep learning and traditional machine learning? When would you choose one over the other?",
+    "type": "descriptive", "skill": "deep learning", "role": "ml_engineer", "difficulty": "medium",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "Traditional ML (e.g. SVM, Random Forest) requires manual feature engineering — domain experts extract relevant features from raw data. Deep learning (neural networks) learns feature representations automatically from raw data. Choose traditional ML when data is small/tabular and interpretability matters. Choose deep learning for large datasets, unstructured data (images, text, audio), and when high accuracy outweighs interpretability and compute cost.",
+    "rubric": [
+      { "criterion": "Traditional ML requires manual feature engineering", "weight": 2 },
+      { "criterion": "Deep learning learns features automatically", "weight": 2 },
+      { "criterion": "Traditional ML preferred for small/tabular data", "weight": 1 },
+      { "criterion": "Deep learning preferred for unstructured/large data", "weight": 2 },
+      { "criterion": "Mentions interpretability trade-off", "weight": 1 }
+    ],
+    "tags": ["deep learning", "machine learning", "aiml"]
+  },
+  {
+    "text": "Explain the concept of containerisation using Docker. How is a container different from a virtual machine?",
+    "type": "descriptive", "skill": "docker", "role": "devops_engineer", "difficulty": "medium",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "Containerisation packages an application with its dependencies into a container image so it runs consistently across environments. Docker uses the host OS kernel (via Linux namespaces and cgroups) rather than emulating hardware. VMs run a full OS on a hypervisor, consuming more memory and taking longer to start. Containers are lightweight (MB vs GB), start in seconds, and share the host kernel. VMs offer stronger isolation; containers offer better density and portability.",
+    "rubric": [
+      { "criterion": "Explains containers package app + dependencies", "weight": 2 },
+      { "criterion": "Containers share host OS kernel", "weight": 2 },
+      { "criterion": "VMs run a full OS on hypervisor", "weight": 1 },
+      { "criterion": "Containers are lighter/faster than VMs", "weight": 2 },
+      { "criterion": "Mentions isolation trade-off", "weight": 1 }
+    ],
+    "tags": ["docker", "devops", "cloud"]
+  },
+  {
+    "text": "Describe the MVC (Model-View-Controller) design pattern and explain how it is implemented in an Express.js application.",
+    "type": "descriptive", "skill": "express", "role": "backend_developer", "difficulty": "medium",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "MVC separates an application into three layers. Model: handles data logic and DB interaction (Mongoose schemas in Express). View: presents data to the user (JSON responses in an API; HTML in a full-stack app). Controller: receives HTTP requests, calls the Model, and returns a response. In Express: routes define URL patterns → controllers handle business logic → models query MongoDB. This separation makes the codebase maintainable and testable.",
+    "rubric": [
+      { "criterion": "Correctly defines Model layer", "weight": 2 },
+      { "criterion": "Correctly defines View layer", "weight": 1 },
+      { "criterion": "Correctly defines Controller layer", "weight": 2 },
+      { "criterion": "Maps MVC to Express routes/controllers/models", "weight": 2 },
+      { "criterion": "Mentions maintainability/testability benefit", "weight": 1 }
+    ],
+    "tags": ["express", "backend", "design patterns"]
+  }
+]

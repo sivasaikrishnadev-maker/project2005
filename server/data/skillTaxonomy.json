@@ -1,0 +1,67 @@
+{
+  "languages": [
+    "python", "javascript", "typescript", "java", "c", "c++", "c#", "go",
+    "golang", "rust", "ruby", "php", "swift", "kotlin", "r", "matlab",
+    "scala", "dart", "perl", "bash", "shell", "powershell", "groovy",
+    "haskell", "lua", "assembly", "vhdl", "verilog", "sql", "solidity"
+  ],
+  "frontend": [
+    "react", "reactjs", "react.js", "react native", "vue", "vuejs", "vue.js",
+    "angular", "angularjs", "next.js", "nextjs", "nuxt", "nuxtjs", "svelte",
+    "sveltekit", "html", "html5", "css", "css3", "tailwind", "tailwindcss",
+    "bootstrap", "material ui", "mui", "chakra ui", "ant design", "jquery",
+    "redux", "zustand", "recoil", "mobx", "webpack", "vite", "babel",
+    "sass", "scss", "less", "styled components", "emotion", "framer motion",
+    "three.js", "d3.js", "d3", "recharts", "chart.js", "leaflet",
+    "pwa", "service worker", "web components", "storybook", "figma"
+  ],
+  "backend": [
+    "node.js", "nodejs", "node", "express", "expressjs", "express.js",
+    "nestjs", "fastify", "koa", "hapi", "django", "flask", "fastapi",
+    "spring", "spring boot", "springboot", "laravel", "rails",
+    "ruby on rails", "asp.net", "dotnet", ".net", "graphql", "rest",
+    "restful", "rest api", "grpc", "websocket", "socket.io", "celery",
+    "rabbitmq", "kafka", "mqtt", "nginx", "apache", "gunicorn", "uvicorn"
+  ],
+  "databases": [
+    "mongodb", "mongoose", "postgresql", "postgres", "mysql", "sqlite",
+    "redis", "cassandra", "dynamodb", "firebase", "firestore", "supabase",
+    "oracle", "sql server", "mssql", "mariadb", "cockroachdb", "neo4j",
+    "elasticsearch", "influxdb", "prisma", "sequelize", "typeorm",
+    "sqlalchemy", "knex"
+  ],
+  "cloud": [
+    "aws", "amazon web services", "ec2", "s3", "lambda", "rds", "cloudfront",
+    "gcp", "google cloud", "bigquery", "firebase", "cloud run",
+    "azure", "microsoft azure", "heroku", "vercel", "netlify", "render",
+    "railway", "digitalocean", "linode", "cloudflare",
+    "docker", "kubernetes", "k8s", "terraform", "ansible", "helm",
+    "ci/cd", "github actions", "gitlab ci", "jenkins", "circleci",
+    "travis ci", "argocd", "prometheus", "grafana", "datadog", "sentry"
+  ],
+  "tools": [
+    "git", "github", "gitlab", "bitbucket", "vs code", "vscode",
+    "intellij", "eclipse", "postman", "insomnia", "swagger",
+    "jira", "confluence", "notion", "trello", "slack",
+    "linux", "ubuntu", "macos", "unix",
+    "jest", "mocha", "chai", "pytest", "unittest", "selenium",
+    "cypress", "playwright", "vitest", "supertest",
+    "agile", "scrum", "kanban", "devops", "tdd", "bdd",
+    "webpack", "vite", "rollup", "esbuild", "npm", "yarn", "pnpm",
+    "makefile", "cmake", "gradle", "maven"
+  ],
+  "aiml": [
+    "machine learning", "ml", "deep learning", "dl", "artificial intelligence",
+    "ai", "neural network", "neural networks", "nlp",
+    "natural language processing", "computer vision", "cv",
+    "tensorflow", "tf", "pytorch", "torch", "keras", "scikit-learn",
+    "sklearn", "pandas", "numpy", "matplotlib", "seaborn", "plotly",
+    "scipy", "opencv", "cv2", "pillow", "transformers", "hugging face",
+    "huggingface", "langchain", "openai", "gpt", "bert", "llm",
+    "stable diffusion", "diffusion models", "gan", "generative ai",
+    "reinforcement learning", "rl", "xgboost", "lightgbm", "catboost",
+    "mlflow", "wandb", "weights and biases", "dvc", "airflow",
+    "data science", "data analysis", "feature engineering",
+    "recommendation system", "time series", "clustering", "classification"
+  ]
+}

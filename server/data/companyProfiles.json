@@ -1,0 +1,56 @@
+[
+  {
+    "id": "google",
+    "name": "Google",
+    "skillWeights": {
+      "python": 3, "algorithms": 3, "data structures": 3, "system design": 3,
+      "javascript": 2, "golang": 2, "kubernetes": 2, "distributed systems": 2,
+      "machine learning": 2, "sql": 1, "linux": 1, "git": 1
+    }
+  },
+  {
+    "id": "microsoft",
+    "name": "Microsoft",
+    "skillWeights": {
+      "c#": 3, "azure": 3, "typescript": 2, "react": 2, "node.js": 2,
+      "sql server": 2, "system design": 3, "python": 2, "dotnet": 2,
+      "kubernetes": 1, "git": 1, "rest api": 2
+    }
+  },
+  {
+    "id": "amazon",
+    "name": "Amazon / AWS",
+    "skillWeights": {
+      "aws": 3, "system design": 3, "java": 3, "python": 2, "sql": 2,
+      "dynamodb": 2, "microservices": 2, "rest api": 2, "docker": 2,
+      "kubernetes": 1, "ci/cd": 1, "git": 1
+    }
+  },
+  {
+    "id": "meta",
+    "name": "Meta",
+    "skillWeights": {
+      "react": 3, "javascript": 3, "python": 2, "php": 1, "system design": 3,
+      "graphql": 2, "machine learning": 2, "c++": 2, "data structures": 2,
+      "algorithms": 2, "git": 1, "linux": 1
+    }
+  },
+  {
+    "id": "startup",
+    "name": "Early-Stage Startup",
+    "skillWeights": {
+      "javascript": 3, "react": 3, "node.js": 3, "mongodb": 2, "postgresql": 2,
+      "docker": 2, "aws": 2, "git": 2, "rest api": 2, "tailwind": 1,
+      "typescript": 1, "ci/cd": 1
+    }
+  },
+  {
+    "id": "infosys",
+    "name": "Infosys / TCS / Wipro",
+    "skillWeights": {
+      "java": 3, "python": 2, "sql": 3, "rest api": 2, "git": 2,
+      "javascript": 2, "html": 2, "css": 1, "agile": 2, "scrum": 2,
+      "testing": 1, "linux": 1
+    }
+  }
+]

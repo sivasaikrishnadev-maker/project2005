@@ -1,0 +1,72 @@
+[
+  {
+    "text": "As a Full Stack Developer, how would you ensure your API is secure and performant?",
+    "type": "role", "skill": "", "role": "fullstack_developer", "difficulty": "hard",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "Security: use HTTPS, validate and sanitise all inputs, implement JWT or session auth, rate limiting, CORS configuration, avoid exposing sensitive fields. Performance: add database indexes, implement caching (Redis), use pagination, compress responses (gzip), use connection pooling, and profile slow endpoints.",
+    "rubric": [
+      { "criterion": "Mentions HTTPS and input validation", "weight": 2 },
+      { "criterion": "Mentions authentication and authorisation", "weight": 2 },
+      { "criterion": "Mentions rate limiting", "weight": 1 },
+      { "criterion": "Mentions caching (Redis)", "weight": 2 },
+      { "criterion": "Mentions database indexes and pagination", "weight": 2 }
+    ],
+    "tags": ["fullstack", "security", "performance"]
+  },
+  {
+    "text": "As a Frontend Developer, how do you ensure your application is accessible to users with disabilities?",
+    "type": "role", "skill": "", "role": "frontend_developer", "difficulty": "medium",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "Follow WCAG guidelines. Use semantic HTML (button, nav, header). Add ARIA labels and roles where needed. Ensure sufficient colour contrast (4.5:1 ratio). Make all interactive elements keyboard-navigable. Add alt text to images. Test with screen readers (NVDA, VoiceOver). Avoid relying solely on colour to convey meaning.",
+    "rubric": [
+      { "criterion": "Mentions semantic HTML", "weight": 2 },
+      { "criterion": "Mentions ARIA labels", "weight": 2 },
+      { "criterion": "Mentions keyboard navigation", "weight": 2 },
+      { "criterion": "Mentions colour contrast", "weight": 1 },
+      { "criterion": "Mentions screen reader testing", "weight": 1 }
+    ],
+    "tags": ["frontend", "accessibility", "ux"]
+  },
+  {
+    "text": "As a DevOps Engineer, how would you set up a CI/CD pipeline for a Node.js application?",
+    "type": "role", "skill": "", "role": "devops_engineer", "difficulty": "hard",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "1. Code pushed to GitHub triggers a GitHub Actions workflow. 2. Pipeline runs: lint → unit tests → build Docker image → push to ECR/Docker Hub. 3. On merge to main: deploy to staging (ECS, Kubernetes) and run integration tests. 4. On approval: deploy to production with a rolling update or blue-green deployment. 5. Set up monitoring (Prometheus + Grafana) and alert on failures.",
+    "rubric": [
+      { "criterion": "Mentions trigger on push/PR", "weight": 1 },
+      { "criterion": "Includes tests in the pipeline", "weight": 2 },
+      { "criterion": "Mentions Docker build and push", "weight": 2 },
+      { "criterion": "Explains staging → production flow", "weight": 2 },
+      { "criterion": "Mentions deployment strategy (rolling/blue-green)", "weight": 2 }
+    ],
+    "tags": ["devops", "cicd", "docker", "kubernetes"]
+  },
+  {
+    "text": "As a Machine Learning Engineer, how do you prevent a model from overfitting?",
+    "type": "role", "skill": "", "role": "ml_engineer", "difficulty": "medium",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "Techniques: 1. Add more training data. 2. Use regularisation (L1/L2). 3. Apply dropout (neural networks). 4. Reduce model complexity. 5. Use cross-validation to detect overfitting early. 6. Apply early stopping based on validation loss. 7. Use data augmentation. 8. Use ensemble methods (bagging) to reduce variance.",
+    "rubric": [
+      { "criterion": "Mentions regularisation (L1/L2)", "weight": 2 },
+      { "criterion": "Mentions dropout for neural networks", "weight": 2 },
+      { "criterion": "Mentions cross-validation or early stopping", "weight": 2 },
+      { "criterion": "Mentions getting more data or augmentation", "weight": 2 },
+      { "criterion": "Mentions reducing model complexity", "weight": 1 }
+    ],
+    "tags": ["machine learning", "mlops", "aiml"]
+  },
+  {
+    "text": "As a Backend Developer, explain how you would design a rate limiter for a public API.",
+    "type": "role", "skill": "", "role": "backend_developer", "difficulty": "hard",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "Common algorithms: Token Bucket (refills tokens over time, allows burst), Sliding Window Counter (tracks requests per rolling window), Fixed Window Counter (simpler but allows edge-case bursts). Implementation: store request counts in Redis with TTL (key = user IP or API key). In Node.js use express-rate-limit with Redis store. Return 429 Too Many Requests with Retry-After header when limit exceeded.",
+    "rubric": [
+      { "criterion": "Explains a rate limiting algorithm", "weight": 3 },
+      { "criterion": "Mentions Redis for distributed storage", "weight": 2 },
+      { "criterion": "Mentions keying by IP or API key", "weight": 1 },
+      { "criterion": "Mentions 429 status code", "weight": 2 },
+      { "criterion": "Mentions Retry-After header", "weight": 1 }
+    ],
+    "tags": ["backend", "system design", "api design"]
+  }
+]

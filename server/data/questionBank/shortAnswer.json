@@ -1,0 +1,99 @@
+[
+  {
+    "text": "What is the difference between == and === in JavaScript?",
+    "type": "short", "skill": "javascript", "role": "", "difficulty": "easy",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "== performs type coercion before comparison (1 == '1' is true). === is strict equality — no type coercion (1 === '1' is false). Always prefer === to avoid unexpected bugs.",
+    "rubric": [
+      { "criterion": "Mentions type coercion for ==", "weight": 2 },
+      { "criterion": "States === does not coerce types", "weight": 2 },
+      { "criterion": "Gives an example", "weight": 1 }
+    ],
+    "tags": ["javascript", "fundamentals"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL databases? Give one example of each.",
+    "type": "short", "skill": "databases", "role": "", "difficulty": "easy",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "SQL databases (e.g. PostgreSQL) use structured tables with fixed schemas and support ACID transactions. NoSQL databases (e.g. MongoDB) use flexible schemas (documents, key-value, etc.) and scale horizontally more easily.",
+    "rubric": [
+      { "criterion": "Explains structured vs flexible schema", "weight": 2 },
+      { "criterion": "Mentions ACID or transactions", "weight": 1 },
+      { "criterion": "Gives correct examples", "weight": 1 },
+      { "criterion": "Mentions horizontal scaling for NoSQL", "weight": 1 }
+    ],
+    "tags": ["databases", "sql", "mongodb"]
+  },
+  {
+    "text": "What is a REST API and what are its key constraints?",
+    "type": "short", "skill": "rest api", "role": "backend_developer", "difficulty": "easy",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "REST (Representational State Transfer) is an architectural style for building APIs over HTTP. Key constraints: statelessness, client-server separation, uniform interface (resources identified by URLs), layered system, and cacheability.",
+    "rubric": [
+      { "criterion": "Defines REST correctly", "weight": 2 },
+      { "criterion": "Mentions statelessness", "weight": 2 },
+      { "criterion": "Mentions uniform interface or resources", "weight": 1 }
+    ],
+    "tags": ["rest api", "backend", "http"]
+  },
+  {
+    "text": "Explain the difference between props and state in React.",
+    "type": "short", "skill": "react", "role": "frontend_developer", "difficulty": "easy",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "Props are read-only inputs passed from a parent component to a child — the child cannot modify them. State is local, mutable data managed within a component using useState. Changes to state trigger a re-render.",
+    "rubric": [
+      { "criterion": "Props are read-only / passed from parent", "weight": 2 },
+      { "criterion": "State is local and mutable", "weight": 2 },
+      { "criterion": "State changes trigger re-render", "weight": 1 }
+    ],
+    "tags": ["react", "frontend"]
+  },
+  {
+    "text": "What is a Python decorator and when would you use one?",
+    "type": "short", "skill": "python", "role": "", "difficulty": "medium",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "A decorator is a function that wraps another function to extend its behaviour without modifying it. Common uses: logging, authentication checks, caching, timing. Defined with @decorator_name syntax.",
+    "rubric": [
+      { "criterion": "Defines decorator as a wrapper function", "weight": 2 },
+      { "criterion": "Mentions @ syntax", "weight": 1 },
+      { "criterion": "Gives a valid use case", "weight": 2 }
+    ],
+    "tags": ["python", "functions"]
+  },
+  {
+    "text": "What is the purpose of JWT in authentication?",
+    "type": "short", "skill": "jwt", "role": "backend_developer", "difficulty": "medium",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "JWT (JSON Web Token) is a compact, self-contained token used to transmit authentication data between parties. After login, the server signs a JWT with a secret. The client sends it in subsequent requests. The server verifies the signature without querying the database, making it stateless.",
+    "rubric": [
+      { "criterion": "Explains what JWT stands for or its structure", "weight": 1 },
+      { "criterion": "Mentions signing with a secret", "weight": 2 },
+      { "criterion": "Explains stateless verification", "weight": 2 }
+    ],
+    "tags": ["jwt", "authentication", "backend"]
+  },
+  {
+    "text": "What is the difference between supervised and unsupervised learning?",
+    "type": "short", "skill": "machine learning", "role": "ml_engineer", "difficulty": "easy",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "Supervised learning trains on labelled data (input-output pairs) to learn a mapping function — e.g. classification, regression. Unsupervised learning finds patterns in unlabelled data — e.g. clustering, dimensionality reduction.",
+    "rubric": [
+      { "criterion": "Supervised = labelled data", "weight": 2 },
+      { "criterion": "Unsupervised = unlabelled data / finds patterns", "weight": 2 },
+      { "criterion": "Gives examples of each", "weight": 1 }
+    ],
+    "tags": ["machine learning", "aiml"]
+  },
+  {
+    "text": "What is the purpose of Git branching and what is the typical workflow?",
+    "type": "short", "skill": "git", "role": "", "difficulty": "easy",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "Branches allow parallel development without affecting the main codebase. Typical workflow: create a feature branch from main, make commits, open a pull request, review, merge back to main, delete the branch.",
+    "rubric": [
+      { "criterion": "Explains parallel development", "weight": 2 },
+      { "criterion": "Mentions feature branch from main", "weight": 1 },
+      { "criterion": "Mentions pull request / merge", "weight": 2 }
+    ],
+    "tags": ["git", "tools", "version control"]
+  }
+]

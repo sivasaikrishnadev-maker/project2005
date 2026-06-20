@@ -1,0 +1,53 @@
+[
+  {
+    "text": "I see you have listed [SKILL] on your resume. Can you describe a specific project or task where you applied it?",
+    "type": "resume", "skill": "", "role": "", "difficulty": "medium",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "A strong answer names a specific project, explains the context (what problem was being solved), describes what exactly they did with the skill, mentions the outcome, and reflects on what they learned.",
+    "rubric": [
+      { "criterion": "Names a specific project or context", "weight": 2 },
+      { "criterion": "Explains what they actually did with the skill", "weight": 3 },
+      { "criterion": "Mentions an outcome or result", "weight": 2 },
+      { "criterion": "Reflects on learnings", "weight": 1 }
+    ],
+    "tags": ["resume", "experience"]
+  },
+  {
+    "text": "You mention [INTERNSHIP/ROLE] in your resume. What was your biggest contribution in that role?",
+    "type": "resume", "skill": "", "role": "", "difficulty": "medium",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "A strong answer uses the STAR method: Situation (the project/problem), Task (their responsibility), Action (what they specifically did), Result (measurable impact). The answer should be specific and quantifiable where possible.",
+    "rubric": [
+      { "criterion": "Uses STAR or structured format", "weight": 2 },
+      { "criterion": "Gives a specific, not generic contribution", "weight": 3 },
+      { "criterion": "Quantifies impact where possible", "weight": 2 },
+      { "criterion": "Mentions team collaboration", "weight": 1 }
+    ],
+    "tags": ["resume", "experience", "hr"]
+  },
+  {
+    "text": "Your resume shows experience with both frontend and backend. Which do you prefer and why?",
+    "type": "resume", "skill": "", "role": "fullstack_developer", "difficulty": "easy",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "A strong answer shows genuine self-awareness. The candidate explains their preference with concrete reasons (e.g. 'I enjoy backend because I like optimising queries and system design'), acknowledges strengths in both, and connects their preference to their career goals.",
+    "rubric": [
+      { "criterion": "States a clear preference", "weight": 1 },
+      { "criterion": "Gives specific reasons backed by experience", "weight": 3 },
+      { "criterion": "Acknowledges the other side too", "weight": 2 },
+      { "criterion": "Connects to career goals", "weight": 2 }
+    ],
+    "tags": ["resume", "self-awareness"]
+  },
+  {
+    "text": "Is there any skill on your resume that you feel you need to strengthen further? How are you working on it?",
+    "type": "resume", "skill": "", "role": "", "difficulty": "easy",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "Honesty is valued here. A strong answer identifies a real gap, explains the plan to address it (courses, projects, practice), and shows initiative. Avoid saying 'nothing' — it signals a lack of self-awareness.",
+    "rubric": [
+      { "criterion": "Honestly identifies a real gap", "weight": 3 },
+      { "criterion": "Has a concrete plan to improve", "weight": 3 },
+      { "criterion": "Shows initiative and proactivity", "weight": 2 }
+    ],
+    "tags": ["resume", "self-improvement", "hr"]
+  }
+]

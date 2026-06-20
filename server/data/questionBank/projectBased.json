@@ -1,0 +1,71 @@
+[
+  {
+    "text": "Walk me through the architecture of a web application you have built. What tech stack did you choose and why?",
+    "type": "project", "skill": "", "role": "", "difficulty": "medium",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "A strong answer names a specific project, explains each layer of the stack with justification (e.g. 'chose React for the component model and state management needs'), mentions the database choice rationale, describes how frontend and backend communicate (REST/GraphQL), and highlights any deployment or scaling decisions.",
+    "rubric": [
+      { "criterion": "Names a specific real project", "weight": 1 },
+      { "criterion": "Explains stack choices with justification", "weight": 3 },
+      { "criterion": "Describes frontend-backend communication", "weight": 2 },
+      { "criterion": "Mentions database choice rationale", "weight": 2 },
+      { "criterion": "Mentions deployment or hosting", "weight": 1 }
+    ],
+    "tags": ["project", "architecture", "system design"]
+  },
+  {
+    "text": "What was the most challenging bug you encountered in a project? How did you identify and fix it?",
+    "type": "project", "skill": "", "role": "", "difficulty": "medium",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "A strong answer describes the bug clearly, explains the debugging process (logs, breakpoints, narrowing down), identifies the root cause, explains the fix, and reflects on what was learned or how it was prevented from recurring.",
+    "rubric": [
+      { "criterion": "Describes a specific, real bug", "weight": 2 },
+      { "criterion": "Explains structured debugging approach", "weight": 3 },
+      { "criterion": "Identifies root cause clearly", "weight": 2 },
+      { "criterion": "Explains the fix", "weight": 2 },
+      { "criterion": "Reflects on prevention or learning", "weight": 1 }
+    ],
+    "tags": ["project", "debugging", "problem solving"]
+  },
+  {
+    "text": "How did you handle authentication in your project? What security considerations did you account for?",
+    "type": "project", "skill": "authentication", "role": "", "difficulty": "medium",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "A strong answer explains the auth method (JWT/session), how passwords are stored (bcrypt), token expiry, HTTPS enforcement, protection against CSRF or XSS, and any refresh token strategy. Bonus: mentions rate limiting on auth endpoints.",
+    "rubric": [
+      { "criterion": "Explains auth method (JWT/sessions)", "weight": 2 },
+      { "criterion": "Mentions password hashing (bcrypt)", "weight": 2 },
+      { "criterion": "Mentions token expiry", "weight": 1 },
+      { "criterion": "Mentions HTTPS or XSS/CSRF protection", "weight": 2 },
+      { "criterion": "Mentions rate limiting", "weight": 1 }
+    ],
+    "tags": ["project", "authentication", "security"]
+  },
+  {
+    "text": "Describe a project where you worked with a team. How did you manage code collaboration and avoid conflicts?",
+    "type": "project", "skill": "git", "role": "", "difficulty": "easy",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "A strong answer mentions using Git branching strategies (feature branches, Gitflow), pull requests with code reviews, clear commit messages, resolving merge conflicts, and communication tools. Bonus: mentions CI/CD checks before merging.",
+    "rubric": [
+      { "criterion": "Mentions Git branching strategy", "weight": 2 },
+      { "criterion": "Mentions pull requests and code review", "weight": 2 },
+      { "criterion": "Explains conflict resolution", "weight": 2 },
+      { "criterion": "Mentions communication (Slack, Jira)", "weight": 1 },
+      { "criterion": "Mentions CI/CD or automated checks", "weight": 1 }
+    ],
+    "tags": ["project", "git", "teamwork"]
+  },
+  {
+    "text": "If you had to improve the performance of one of your existing projects, what would you change and why?",
+    "type": "project", "skill": "", "role": "", "difficulty": "hard",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "A strong answer identifies specific bottlenecks (e.g. slow DB queries, unoptimised images, no caching), proposes targeted solutions (indexes, CDN, Redis caching, lazy loading, code splitting), and explains the expected impact.",
+    "rubric": [
+      { "criterion": "Identifies specific bottleneck in their project", "weight": 3 },
+      { "criterion": "Proposes a concrete, targeted solution", "weight": 3 },
+      { "criterion": "Explains expected performance gain", "weight": 2 },
+      { "criterion": "Mentions measurement/profiling approach", "weight": 1 }
+    ],
+    "tags": ["project", "performance", "optimisation"]
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "text": "Which of the following correctly describes the time complexity of accessing an element in a hash map (average case)?",
+    "type": "mcq", "skill": "data structures", "role": "", "difficulty": "easy",
+    "options": ["A. O(n)", "B. O(log n)", "C. O(1)", "D. O(n²)"],
+    "correctOption": "C",
+    "referenceAnswer": "Hash maps use a hash function to compute a key's index, giving O(1) average-case access. Collisions can degrade this to O(n) worst case.",
+    "rubric": [{ "criterion": "Selects O(1)", "weight": 2 }, { "criterion": "Mentions hash function", "weight": 1 }],
+    "tags": ["data structures", "algorithms"]
+  },
+  {
+    "text": "In React, what is the primary purpose of the useEffect hook?",
+    "type": "mcq", "skill": "react", "role": "frontend_developer", "difficulty": "easy",
+    "options": ["A. To manage component state", "B. To perform side effects after render", "C. To memoize expensive computations", "D. To create context providers"],
+    "correctOption": "B",
+    "referenceAnswer": "useEffect runs side effects (data fetching, subscriptions, DOM mutations) after render. The dependency array controls when it re-runs.",
+    "rubric": [{ "criterion": "Selects option B", "weight": 2 }, { "criterion": "Understands dependency array", "weight": 1 }],
+    "tags": ["react", "hooks", "frontend"]
+  },
+  {
+    "text": "Which HTTP status code indicates that a resource was successfully created?",
+    "type": "mcq", "skill": "rest api", "role": "backend_developer", "difficulty": "easy",
+    "options": ["A. 200 OK", "B. 201 Created", "C. 204 No Content", "D. 301 Moved Permanently"],
+    "correctOption": "B",
+    "referenceAnswer": "201 Created is returned when a POST request successfully creates a resource.",
+    "rubric": [{ "criterion": "Selects 201", "weight": 2 }, { "criterion": "Knows it applies to POST", "weight": 1 }],
+    "tags": ["rest api", "http", "backend"]
+  },
+  {
+    "text": "Which Python data structure maintains insertion order and allows duplicate values?",
+    "type": "mcq", "skill": "python", "role": "", "difficulty": "easy",
+    "options": ["A. set", "B. dict", "C. list", "D. frozenset"],
+    "correctOption": "C",
+    "referenceAnswer": "Python lists are ordered and allow duplicates. Sets are unordered and deduplicate; dict keys must be unique.",
+    "rubric": [{ "criterion": "Selects list", "weight": 2 }, { "criterion": "Distinguishes from set", "weight": 1 }],
+    "tags": ["python", "data structures"]
+  },
+  {
+    "text": "In MongoDB, which query finds documents where 'age' is greater than 25?",
+    "type": "mcq", "skill": "mongodb", "role": "backend_developer", "difficulty": "medium",
+    "options": ["A. db.users.find({ age: { $gt: 25 } })", "B. db.users.find({ age > 25 })", "C. db.users.where('age').gt(25)", "D. db.users.select({ age: '>25' })"],
+    "correctOption": "A",
+    "referenceAnswer": "MongoDB uses $ operators for comparisons. $gt means 'greater than'. Syntax: { field: { $operator: value } }.",
+    "rubric": [{ "criterion": "Selects option A", "weight": 2 }, { "criterion": "Knows $ operator syntax", "weight": 1 }],
+    "tags": ["mongodb", "databases", "nosql"]
+  },
+  {
+    "text": "What does the 'S' in SOLID principles stand for?",
+    "type": "mcq", "skill": "software engineering", "role": "", "difficulty": "easy",
+    "options": ["A. Scalability", "B. Single Responsibility Principle", "C. Separation of Concerns", "D. Static Typing"],
+    "correctOption": "B",
+    "referenceAnswer": "S = Single Responsibility Principle: a class should have only one reason to change.",
+    "rubric": [{ "criterion": "Selects Single Responsibility", "weight": 2 }, { "criterion": "Explains one reason to change", "weight": 1 }],
+    "tags": ["software engineering", "design principles"]
+  },
+  {
+    "text": "In machine learning, what is overfitting?",
+    "type": "mcq", "skill": "machine learning", "role": "ml_engineer", "difficulty": "easy",
+    "options": ["A. Model performs well on training data but poorly on new data", "B. Model performs poorly on both training and test data", "C. Model takes too long to train", "D. Model uses too many features"],
+    "correctOption": "A",
+    "referenceAnswer": "Overfitting occurs when a model learns training data noise too well, reducing generalisation to unseen data.",
+    "rubric": [{ "criterion": "Selects option A", "weight": 2 }, { "criterion": "Mentions generalisation failure", "weight": 1 }],
+    "tags": ["machine learning", "aiml"]
+  },
+  {
+    "text": "Which Docker command builds an image from a Dockerfile?",
+    "type": "mcq", "skill": "docker", "role": "devops_engineer", "difficulty": "easy",
+    "options": ["A. docker run", "B. docker create", "C. docker build", "D. docker start"],
+    "correctOption": "C",
+    "referenceAnswer": "docker build reads the Dockerfile and creates an image. docker run creates and starts a container from an existing image.",
+    "rubric": [{ "criterion": "Selects docker build", "weight": 2 }, { "criterion": "Distinguishes build vs run", "weight": 1 }],
+    "tags": ["docker", "devops"]
+  },
+  {
+    "text": "What is the purpose of the 'async/await' syntax in JavaScript?",
+    "type": "mcq", "skill": "javascript", "role": "", "difficulty": "easy",
+    "options": ["A. To define generator functions", "B. To write asynchronous code that reads like synchronous code", "C. To create multi-threaded execution", "D. To delay function execution by a fixed time"],
+    "correctOption": "B",
+    "referenceAnswer": "async/await is syntactic sugar over Promises. It allows asynchronous code to be written in a sequential, readable style without chaining .then().",
+    "rubric": [{ "criterion": "Selects option B", "weight": 2 }, { "criterion": "Mentions Promises underneath", "weight": 1 }],
+    "tags": ["javascript", "async", "promises"]
+  },
+  {
+    "text": "Which AWS service is best suited for storing large unstructured files like images and videos?",
+    "type": "mcq", "skill": "aws", "role": "cloud_engineer", "difficulty": "easy",
+    "options": ["A. AWS RDS", "B. AWS EC2", "C. AWS S3", "D. AWS Lambda"],
+    "correctOption": "C",
+    "referenceAnswer": "Amazon S3 (Simple Storage Service) is object storage designed for storing and retrieving any amount of unstructured data.",
+    "rubric": [{ "criterion": "Selects S3", "weight": 2 }, { "criterion": "Knows S3 is object storage", "weight": 1 }],
+    "tags": ["aws", "cloud", "storage"]
+  }
+]

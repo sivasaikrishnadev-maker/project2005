@@ -1,0 +1,72 @@
+[
+  {
+    "text": "Your React application is rendering slowly. Users report the UI freezes when they open the dashboard which displays 500 rows of data. How would you diagnose and fix this?",
+    "type": "scenario", "skill": "react", "role": "frontend_developer", "difficulty": "hard",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "1. Profile using React DevTools Profiler to identify which components re-render unnecessarily. 2. Virtualise the list using react-window or react-virtual — only render visible rows. 3. Use React.memo to prevent child re-renders when props haven't changed. 4. Use useMemo for expensive computations. 5. Implement pagination or infinite scroll to limit data loaded at once. 6. Move heavy data fetching to useEffect with proper dependency arrays.",
+    "rubric": [
+      { "criterion": "Mentions profiling/React DevTools", "weight": 2 },
+      { "criterion": "Suggests list virtualisation", "weight": 2 },
+      { "criterion": "Mentions React.memo or useMemo", "weight": 2 },
+      { "criterion": "Suggests pagination or lazy loading", "weight": 2 },
+      { "criterion": "Structured diagnostic approach", "weight": 1 }
+    ],
+    "tags": ["react", "performance", "frontend"]
+  },
+  {
+    "text": "You are building a Node.js API that suddenly starts returning 503 errors under load. Describe your debugging process.",
+    "type": "scenario", "skill": "node.js", "role": "backend_developer", "difficulty": "hard",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "1. Check server logs and error messages. 2. Monitor CPU/memory — a memory leak or CPU spike could be the cause. 3. Use a load testing tool (k6, Artillery) to reproduce. 4. Check database connection pool — too many concurrent queries may exhaust the pool. 5. Look for synchronous blocking code in the event loop. 6. Add rate limiting. 7. Scale horizontally with a load balancer or use clustering (Node cluster module) to utilise multiple CPU cores.",
+    "rubric": [
+      { "criterion": "Checks logs and error messages", "weight": 1 },
+      { "criterion": "Monitors CPU/memory metrics", "weight": 2 },
+      { "criterion": "Identifies DB connection pool as bottleneck", "weight": 2 },
+      { "criterion": "Mentions event loop blocking", "weight": 2 },
+      { "criterion": "Suggests horizontal scaling or clustering", "weight": 2 }
+    ],
+    "tags": ["node.js", "backend", "performance", "debugging"]
+  },
+  {
+    "text": "You need to design the database schema for a social media platform where users can post content and follow each other. Would you use SQL or NoSQL? Justify your choice.",
+    "type": "scenario", "skill": "databases", "role": "", "difficulty": "hard",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "Both are valid with trade-offs. SQL (PostgreSQL): strong for relational queries like 'posts by users I follow', ACID compliance, and complex joins. Use for structured user/post data. NoSQL (MongoDB): better for variable post content (text, images, videos in one document), horizontal scaling for high write volume, and flexible schema for evolving features. A hybrid approach is common: PostgreSQL for user relationships and NoSQL for post content/activity feeds.",
+    "rubric": [
+      { "criterion": "Justifies choice with specific reasoning", "weight": 2 },
+      { "criterion": "Mentions relational nature of follows", "weight": 2 },
+      { "criterion": "Considers scalability for high volume", "weight": 2 },
+      { "criterion": "Considers schema flexibility", "weight": 1 },
+      { "criterion": "Mentions hybrid approach as valid option", "weight": 1 }
+    ],
+    "tags": ["databases", "system design", "mongodb", "postgresql"]
+  },
+  {
+    "text": "Your ML model works perfectly in development but performs poorly in production. What steps would you take to investigate?",
+    "type": "scenario", "skill": "machine learning", "role": "ml_engineer", "difficulty": "hard",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "1. Check for data drift — production data distribution may differ from training data. 2. Verify preprocessing pipeline is identical in both environments. 3. Check for feature leakage in training. 4. Examine class distribution — production data may be imbalanced differently. 5. Log prediction inputs/outputs and compare with training samples. 6. Re-evaluate on a holdout set from recent production data. 7. Monitor model metrics continuously with tools like MLflow or Evidently.",
+    "rubric": [
+      { "criterion": "Identifies data/concept drift", "weight": 3 },
+      { "criterion": "Checks preprocessing consistency", "weight": 2 },
+      { "criterion": "Mentions feature leakage", "weight": 2 },
+      { "criterion": "Suggests logging and monitoring", "weight": 1 },
+      { "criterion": "Mentions retraining on recent data", "weight": 1 }
+    ],
+    "tags": ["machine learning", "mlops", "aiml"]
+  },
+  {
+    "text": "A team member accidentally pushed sensitive credentials to a public GitHub repository. What do you do immediately?",
+    "type": "scenario", "skill": "git", "role": "", "difficulty": "medium",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "1. Immediately revoke/rotate the exposed credentials — assume they are compromised. 2. Remove the secrets from the repository history using git filter-branch or BFG Repo Cleaner and force-push. 3. Add the secrets file to .gitignore. 4. Notify the team and relevant stakeholders. 5. Audit access logs for the compromised credentials. 6. Set up pre-commit hooks or tools like git-secrets or TruffleHog to prevent future leaks.",
+    "rubric": [
+      { "criterion": "Immediately rotates/revokes credentials", "weight": 3 },
+      { "criterion": "Removes from git history", "weight": 2 },
+      { "criterion": "Adds to .gitignore", "weight": 1 },
+      { "criterion": "Audits access logs", "weight": 2 },
+      { "criterion": "Mentions prevention tools", "weight": 1 }
+    ],
+    "tags": ["git", "security", "devops"]
+  }
+]

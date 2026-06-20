@@ -1,0 +1,79 @@
+[
+  {
+    "text": "Tell me about yourself and why you are interested in this role.",
+    "type": "hr", "skill": "", "role": "", "difficulty": "easy",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "A strong answer is structured: brief background (education/field), 2-3 key technical strengths with examples, why this specific role/company interests them, and what they aim to contribute. Should be 90 seconds to 2 minutes, not a CV recitation.",
+    "rubric": [
+      { "criterion": "Gives a concise and structured introduction", "weight": 2 },
+      { "criterion": "Highlights relevant technical strengths", "weight": 2 },
+      { "criterion": "Shows genuine interest in the role/company", "weight": 2 },
+      { "criterion": "Mentions contribution or goal", "weight": 2 }
+    ],
+    "tags": ["hr", "introduction", "communication"]
+  },
+  {
+    "text": "Describe a time you faced a difficult technical challenge. How did you handle it?",
+    "type": "hr", "skill": "", "role": "", "difficulty": "medium",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "Use STAR: Situation (describe the challenge), Task (your responsibility), Action (specific steps taken — research, asking for help, systematic debugging), Result (outcome and learning). The best answers show persistence, resourcefulness, and learning mindset.",
+    "rubric": [
+      { "criterion": "Describes a specific, real challenge", "weight": 2 },
+      { "criterion": "Explains their thought process and steps taken", "weight": 3 },
+      { "criterion": "Mentions outcome", "weight": 2 },
+      { "criterion": "Reflects on learning from the experience", "weight": 2 }
+    ],
+    "tags": ["hr", "problem solving", "star method"]
+  },
+  {
+    "text": "Where do you see yourself in 3-5 years?",
+    "type": "hr", "skill": "", "role": "", "difficulty": "easy",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "A strong answer is realistic and aligns with the role. It shows ambition (technical leadership, specialisation, open source contribution) while being grounded. Avoid vague answers ('I just want to grow') — be specific about the direction.",
+    "rubric": [
+      { "criterion": "Gives a specific, realistic career direction", "weight": 3 },
+      { "criterion": "Aligns with the role they are applying for", "weight": 2 },
+      { "criterion": "Shows ambition without being unrealistic", "weight": 2 },
+      { "criterion": "Mentions skill development or contribution goal", "weight": 1 }
+    ],
+    "tags": ["hr", "career goals"]
+  },
+  {
+    "text": "Tell me about a time you worked in a team and had a disagreement. How did you resolve it?",
+    "type": "hr", "skill": "", "role": "", "difficulty": "medium",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "Use STAR. Strong answers show: listening to the other perspective, focusing on the technical/objective merits rather than personal preference, seeking a compromise or escalating constructively, and an outcome where the team relationship was maintained.",
+    "rubric": [
+      { "criterion": "Describes a specific real disagreement", "weight": 2 },
+      { "criterion": "Shows active listening and empathy", "weight": 2 },
+      { "criterion": "Focused on objective merits not personal feelings", "weight": 2 },
+      { "criterion": "Positive outcome and relationship maintained", "weight": 2 }
+    ],
+    "tags": ["hr", "teamwork", "communication"]
+  },
+  {
+    "text": "How do you stay updated with the latest technologies and industry trends?",
+    "type": "hr", "skill": "", "role": "", "difficulty": "easy",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "Strong answers mention: specific resources (Dev.to, Hacker News, official docs, GitHub trending), communities (Discord servers, meetups), personal projects for hands-on learning, following engineers on social media, reading RFCs or release notes, and contributing to open source.",
+    "rubric": [
+      { "criterion": "Names specific, credible learning resources", "weight": 3 },
+      { "criterion": "Mentions hands-on learning (side projects)", "weight": 2 },
+      { "criterion": "Mentions community involvement", "weight": 2 },
+      { "criterion": "Shows genuine curiosity and initiative", "weight": 2 }
+    ],
+    "tags": ["hr", "learning", "self-improvement"]
+  },
+  {
+    "text": "What is your greatest strength and how does it benefit a software development team?",
+    "type": "hr", "skill": "", "role": "", "difficulty": "easy",
+    "options": [], "correctOption": "",
+    "referenceAnswer": "A strong answer names one clear strength, backs it with a specific example, and connects it directly to team benefit. Avoid generic answers ('I'm a hard worker'). E.g. 'My strength is breaking down complex problems — I once simplified a confusing legacy module that unblocked three teammates.'",
+    "rubric": [
+      { "criterion": "Names one specific, believable strength", "weight": 2 },
+      { "criterion": "Backs it with a concrete example", "weight": 3 },
+      { "criterion": "Connects strength to team benefit", "weight": 3 }
+    ],
+    "tags": ["hr", "self-awareness", "strengths"]
+  }
+]
