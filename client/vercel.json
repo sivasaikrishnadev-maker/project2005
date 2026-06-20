@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://project2005.onrender.com"
+      "destination": "https://project2005.onrender.com/api/:path*"
     }
   ]
 }
